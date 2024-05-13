@@ -22,3 +22,28 @@ Excecution:-
 
 Output:  Density.dat
 Two columns (distance (nm), Number density (N Å-3) )
+
+
+Polymer dynamics
+Polymer behaves differently in MOF and outside MOF.
+To understand its dynamics we calculate several properties like shape (shape factor), Rg, Orientation of the polymer. This is acheived by the code shape_chain4.py
+Code:  shape_chain4.py
+Input file: input_shape_chain.dat
+
+    1                   # No of chains
+    PVDF_BBchain.ndx    # chain index file
+    16202 6120          # Natom  Index to skip before
+    traj_DUT4_PVDF_nvt10.gro 2 1 # traj_file, head+tail lines
+    10  1               # ntraj nskip
+    5		            # cut_off size
+    3 True              # nbins in z direction, To zone or not
+    0.0, 4.272, 7.985, 8.622, #if zone-dimension
+    True                # To use number average in calculation
+
+Supplimentry files: index.ndx (It contains serial number of atoms in backbone chain )
+    1
+    34 45 201 ....
+     #blank
+    2
+    35 44 ...
+trajetory_file.gro (Trajectory file in gromacs formate)

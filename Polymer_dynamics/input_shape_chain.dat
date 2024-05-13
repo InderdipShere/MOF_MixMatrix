@@ -1,0 +1,9 @@
+35                  # No of chains
+PVDF_BBchain.ndx    # chain index file
+12304 6084          # Natom  Index to skip before
+traj_DUT4_PVDF_nvt_10.gro 2 1 # traj_file, head+tail lines
+1000  1              # ntraj nskip 
+5		    # cut_off size
+3 True              # nbins in z direction 
+0.0, 3.56, 4.89, 6.0,  
+True               # number average

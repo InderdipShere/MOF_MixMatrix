@@ -1,0 +1,18 @@
+para_Make_topol.dat           ! parameter file
+2 0                             ! type of molecules 
+MIL 4  1098                   ! no of times UC repeated, atoms in UC
+MIL177_Slab001_charge.xyz     2   2  ! charge file and header  for a UC  C1C1,C2C2,H1H2
+data.New_configure_rep_tri_new      2  ! position+connection file and header
+1 ! if  ; then 
+4  4
+0.0 0.0 0.0                   ! displace vector in Ang for MIL 
+PHI 12 320
+PHI_5L_H_charges.xyz       2   1  ! arrangemment of the atoms C1C2,C1C2,H1H2
+data.PHI_5L_H_232_relax_tri_complete  2
+0 ! if ; then
+0.0 0.0 61.0                   ! displace vector in Ang for PHI 
+!! Fluid molecules 
+CO2  126  3                    ! No of molecules, atoms in 1 molecules
+CO2_parameter.dat         2    ! molecule file and  header 
+NEW_MOF_SUPERCELL_CAR.car 3606 ! car corrdinate file
+0.0 0.0 81.0                    ! displacement of the fluid
